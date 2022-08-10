@@ -25,7 +25,7 @@ def resolve(dns_records, lookup_chain, domain)
   matched_dns = dns_records[domain]
 
   if (!matched_dns)
-    lookup_chain << "Error: Record is not found for " + domain
+    lookup_chain << "Error: Record not found for " + domain
     return lookup_chain
   end
 
